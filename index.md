@@ -1,6 +1,6 @@
 ---
 layout: page
-title: پانوشته‌های یک اسب آبی
+title: پانوشته‌های یک کمپوت اسب
 tagline: 
 ---
 {% include JB/setup %}
