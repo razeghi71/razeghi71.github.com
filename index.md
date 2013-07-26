@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: پا نوشته‌های یک اسب آبی
 tagline: 
 ---
 {% include JB/setup %}
