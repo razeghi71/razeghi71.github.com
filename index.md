@@ -6,8 +6,9 @@ tagline:
 
 <ul >
     {% for post in site.posts limit 10 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-        {{ post.content | strip_html | truncatewords:75}}<br>
-            <a href="{{ post.url }}">بیشتر بخوانید...</a><br><br>
+    <li><a href="{{ BASE_PATH }}{{ post.url }}" style="font-size:20px;">{{ post.title }}</a></li>
+        {{ post.content | strip_html | truncatewords:75}}<br> <br>
+            <a href="{{ post.url }}">مطلب کامل</a><br><br>
+	<hr>
     {% endfor %}
 </ul>
