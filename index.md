@@ -55,9 +55,6 @@ tagline:
 		</td>			
 	</tr>
 	<tr>
-		<td bgcolor="#C1FE03" colspan="3" height="45" valign="top" align="center">
-			<a href="idea.php"><div class="nazar">فرم ارسال نظر و از اینجور حرفها</div></a>
-		</td>	
 	</tr>
 	<tr>
 	<td align="center" colspan="3">
