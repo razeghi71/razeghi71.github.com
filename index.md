@@ -3,15 +3,6 @@ layout: page
 title: پانوشته‌های یک کمپوت اسب
 tagline: 
 ---
-
-<html>
-<head>
-<title>حوری</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body bgcolor="#9f9f9f" dir="rtl"> 
-<br>
 <table align="center"  cellpadding="0" cellspacing="0">
 	<tr bgcolor="#9F9F9F">
 		<td valign="top" width="97px">
@@ -63,5 +54,3 @@ tagline:
 	</tr>
 		
 </table>
-</body>
-</html>
