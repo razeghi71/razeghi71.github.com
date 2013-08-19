@@ -1,15 +1,18 @@
 ---
 layout: page
-title: پانوشته‌های یک کمپوت اسب
+title: 	
 tagline: 
 ---
-
-<ul >
-    {% for post in site.posts limit 10 %}
-    <li><a href="{{ BASE_PATH }}{{ post.url }}" style="font-size:20px;">{{ post.title }}</a> <br> <br>
-        <div style="font-size:15px;">{{ post.content | strip_html }}</div>
-        <a  style="font-size:12px;" href="{{ post.url }}">کامنت بگذارید ... </a><br>
-		<hr>
-	</li>
-    {% endfor %}
-</ul>
+<div id="wrapper" dir="rtl">
+<div id="page" class="container">
+{% for post in site.posts limit 10 %}
+<div>
+	<h2>{{ post.title }}</h2>
+    <div style="font-size:15px;">{{ post.content | strip_html | truncatewords : 50 }}</div>
+    <a class="posted-style" href="{{ post.url }}">دیدن کامل پست و کامنت </a>
+</div>
+<br>
+<br>
+{% endfor %}
+</div>
+</div>

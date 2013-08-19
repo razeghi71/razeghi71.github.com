@@ -1,0 +1,52 @@
+<div id="banner-wrapper" dir="rtl">
+<div id="banner" class="container">
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+</div>
+
+    <div class="date">
+      <span>{{ page.date | date_to_long_string }}</span>
+    </div>
+  
+  <br> <br>
+    <div class="content">
+      {{ content }}
+    </div>
+
+  {% unless page.categories == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
+    </ul>
+  {% endunless %}  
+
+  <br> <br>
+  تگ‌ها :
+  {% unless page.tags == empty %}
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+  {% endunless %}  
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      {% if page.next %}
+        <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" class="button-style"> بعدی &rarr;</a> 
+      {% endif %}
+      {% if page.previous %}
+          <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" class="button-style">&larr; قبلی</a>
+      {% endif %}
+      </ul>
+    </div>
+    <hr>
+
+</div>
+</div>
+<div id="wrapper" dir="rtl">
+<div id="page" class="container">
+      {% include JB/comments %}
+</div>
+</div>
+
+
