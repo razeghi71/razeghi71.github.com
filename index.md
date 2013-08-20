@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 	
+title: پا‌نوشته‌های یک کمپوت اسب
 tagline: 
 ---
 <div id="wrapper" dir="rtl">
