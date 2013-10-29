@@ -1,10 +1,10 @@
-<div id="banner-wrapper" dir="rtl">
+<div id="banner-wrapper">
 <div id="banner" class="container">
-<div class="page-header">
+<div class="page-header" dir="rtl">
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
 
-    <div class="date">
+    <div class="date" dir="rtl">
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
   
@@ -14,7 +14,7 @@
     </div>
 
   {% unless page.categories == empty %}
-    <ul class="tag_box inline">
+    <ul class="tag_box inline" dir="rtl">
       <li><i class="icon-folder-open"></i></li>
       {% assign categories_list = page.categories %}
       {% include JB/categories_list %}
@@ -22,14 +22,15 @@
   {% endunless %}  
 
   <br> <br>
+<div dir="rtl">
   تگ‌ها :
   {% unless page.tags == empty %}
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
   {% endunless %}  
-
+</div>
     <hr>
-    <div class="pagination">
+    <div class="pagination" dir="rtl">
       <ul>
       {% if page.next %}
         <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" class="button-style"> بعدی &rarr;</a> 

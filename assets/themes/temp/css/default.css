@@ -28,10 +28,17 @@ p, ol, ul
 p
 {
 	line-height: 180%;
+	direction : rtl;
 }
 
 strong
 {
+}
+
+code{
+	direction:ltr;
+	background-color:green;
+	text-align:left;
 }
 
 a
