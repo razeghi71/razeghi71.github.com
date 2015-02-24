@@ -18,7 +18,3 @@ tagline:
 {% endfor %}
 </div>
 </div>
- 
-<script>
-    window.location = "https://morning-sands-9122.herokuapp.com";
-</script>
